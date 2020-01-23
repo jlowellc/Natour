@@ -1,0 +1,25 @@
+.heading-primary {
+	color: $color-white;
+	text-transform: uppercase;
+	margin-bottom: 6rem;
+
+	/* Hides the shake from a transform */
+	backface-visibility: hidden;
+	&--main {
+		display: block;
+		font-size: 6rem;
+		font-weight: 400;
+		letter-spacing: 3rem;
+
+		animation: moveInLeft 1s ease-out;
+	}
+
+	&--sub {
+		display: block;
+		font-size: 2rem;
+		font-weight: 700;
+		letter-spacing: 1.94rem;
+
+		animation: moveInRight 1s ease-out;
+	}
+}
