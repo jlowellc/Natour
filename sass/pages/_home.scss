@@ -13,10 +13,12 @@
 		),
 		url(../img/nat-4.jpg);
 	background-size: cover;
+
+	// Slide the image up
 	margin-top: -10rem;
 
+	// Skew the background but keep the other elements straight
 	transform: skewY(-7deg);
-
 	& > * {
 		transform: skewY(7deg);
 	}
