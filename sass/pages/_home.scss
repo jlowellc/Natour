@@ -13,12 +13,12 @@
 		),
 		url(../img/nat-4.jpg);
 	background-size: cover;
+	margin-top: -10rem; // Slide the image up
 
-	// Slide the image up
-	margin-top: -10rem;
-
-	// Skew the background but keep the other elements straight
+	// Skew the section-features element by +/- deg,
 	transform: skewY(-7deg);
+
+	// Will skew all (*) children of parent (section-features) the inverse amount of deg to cancel out the parent skew
 	& > * {
 		transform: skewY(7deg);
 	}
@@ -33,4 +33,35 @@
 .section-stories {
 	position: relative;
 	padding: 15rem 0;
+}
+
+.section-book {
+	padding: 15rem 0;
+	background-image: linear-gradient(
+		to right bottom,
+		$color-primary-light,
+		$color-primary-dark
+	);
+}
+
+.book {
+	/* SOLID COLOR GRADIENT OVER BACKGROUND IMAGE */
+	background-image: linear-gradient(
+			105deg /* Angle of gradient seperation */,
+			rgba($color-white, 0.9) 0% /* Solid color begins */,
+			rgba($color-white, 0.9) 50% /* Solid color ends */,
+			transparent 50% /* Second color (transparency) begins */
+		),
+		url(../img/nat-10.jpg) /* Background image */;
+
+	background-size: cover;
+	border-radius: $default-radius;
+	box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+
+	height: 50rem;
+
+	&__form {
+		width: 50%;
+		padding: 6rem;
+	}
 }
