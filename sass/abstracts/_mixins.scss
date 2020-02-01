@@ -1,7 +1,9 @@
 @mixin clearfix {
 	&::after {
+		// CONTENT (empty should be default) AND DISPLAY PROPS MUST BE SPECIFIED WHEN USING A PSUEDO ELEMENT
 		content: '';
 		display: table;
+
 		clear: both;
 	}
 }
