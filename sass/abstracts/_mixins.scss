@@ -1,16 +1,16 @@
 @mixin clearfix {
-  &::after {
-    // CONTENT (empty should be default) AND DISPLAY PROPS MUST BE SPECIFIED WHEN USING A PSUEDO ELEMENT
-    content: '';
-    display: table;
+	&::after {
+		// CONTENT (empty should be default) AND DISPLAY PROPS MUST BE SPECIFIED WHEN USING A PSUEDO ELEMENT
+		content: '';
+		display: table;
 
-    clear: both;
-  }
+		clear: both;
+	}
 }
 
-@mixin centerHorandVert {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@mixin absCenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
